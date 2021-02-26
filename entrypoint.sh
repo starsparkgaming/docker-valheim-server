@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /home/container
 
-export templdpath=$LD_LIBRARY_PATH
-export LD_LIBRARY_PATH=./linux64:$LD_LIBRARY_PATH
+export templdpath=./linux64
+export LD_LIBRARY_PATH=./linux64:./linux64
 export SteamAppId=892970
 
 ## download and install steamcmd
