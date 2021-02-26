@@ -8,7 +8,7 @@ tar -xzvf steamcmd.tar.gz -C /home/container/steamcmd
 rm /home/container/steamcmd.tar.gz
 
 # setup hidden directories
-mkdir -p /home/container/.config/unity3d/IronGate/Valheim
+mkdir /home/container/.config
 
 # install steamm app with steamcmd
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 896660 +quit
