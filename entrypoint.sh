@@ -1,9 +1,6 @@
 #!/bin/bash
 cd /home/container
 
-# setup hidden directory
-mkdir /home/container/.config
-
 ## download and install steamcmd
 mkdir /home/container/steamcmd
 curl -SL -o steamcmd.tar.gz "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz"
