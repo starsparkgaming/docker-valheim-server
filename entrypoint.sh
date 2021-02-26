@@ -7,11 +7,8 @@ curl -SL -o steamcmd.tar.gz "https://steamcdn-a.akamaihd.net/client/installer/st
 tar -xzvf steamcmd.tar.gz -C /home/container/steamcmd
 rm /home/container/steamcmd.tar.gz
 
-# create required directories
-mkdir -p /home/user/.config/unity3d/IronGate/Valheim/worlds
-
 # install steamm app with steamcmd
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 896660 +quit
 
 # run the Server
-eval /home/container/app/valheim_server.x86_64 -name "$NAME" -port $PORT -world "$WORLD" -password "$PASSWORD"
+eval /home/container/app/valheim_server.x86_64 -name "$NAME" -port $PORT -world "$WORLD" -password "$PASSWORD" -savedir "/home/container/save"
