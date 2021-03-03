@@ -12,6 +12,7 @@ ENV         NAME "Valheim Docker Server"
 ENV         WORLD "Dedicated"
 ENV         PASSWORD "12345"
 ENV         PORT "2456"
+
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh

@@ -16,6 +16,7 @@ rm /home/container/steamcmd.tar.gz
 
 # setup directories
 mkdir /data
+mkdir -p /home/container/.config/unity3d/IronGate/Valheim
 ln -s /data /home/container/.config/unity3d/IronGate/Valheim
 
 # run the Server
