@@ -14,5 +14,9 @@ rm /home/container/steamcmd.tar.gz
 # install steamm app with steamcmd
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 896660 +quit
 
+# setup directories
+mkdir /data
+ln -s /data /home/container/.config/unity3d/IronGate/Valheim
+
 # run the Server
 eval /home/container/app/valheim_server.x86_64 -name "$NAME" -port $PORT -world "$WORLD" -password "$PASSWORD"
