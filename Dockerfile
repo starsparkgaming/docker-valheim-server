@@ -16,8 +16,6 @@ ENV         PORT "2456"
 ENV         PUBLIC "1"
 EXPOSE      2456-2458/udp
 
-VOLUME      /home/container
-
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
