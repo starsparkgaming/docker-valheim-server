@@ -17,7 +17,7 @@ rm /home/container/steamcmd.tar.gz
 # setup directories
 mkdir /data
 mkdir -p /home/container/.config/unity3d/IronGate/Valheim
-ln -s /data /home/container/.config/unity3d/IronGate/Valheim
+ln -s /home/container/.config/unity3d/IronGate/Valheim /data
 
 # run the Server
 eval /home/container/app/valheim_server.x86_64 -name "$NAME" -port $PORT -world "$WORLD" -password "$PASSWORD"
