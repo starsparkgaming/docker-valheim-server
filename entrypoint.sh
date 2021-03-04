@@ -15,4 +15,4 @@ rm /home/container/steamcmd.tar.gz
 ./steamcmd/steamcmd.sh +login anonymous +force_install_dir /home/container/app +app_update 896660 +quit
 
 # run the Server
-/home/container/app/valheim_server.x86_64 -name $NAME -port $PORT -world $WORLD -password $PASSWORD -public $PUBLIC
+/home/container/app/valheim_server.x86_64 -name ${NAME} -port ${PORT} -world ${WORLD} -password ${PASSWORD} -public ${PUBLIC}
